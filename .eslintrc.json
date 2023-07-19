@@ -7,6 +7,15 @@
         "plugin:react/recommended",
         "airbnb"
     ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
+    },
+    "overrides": [
+    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
