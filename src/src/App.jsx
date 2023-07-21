@@ -1,13 +1,17 @@
+import Header from './components/Header.jsx';
 import { Form } from './components/form.jsx';
 
 import './global.css';
 
 export function App() {
   return (
-    <div>
-      <main>
+    <main>
+      <header>
+        <Header />
+      </header>
+      <article>
         <Form />
-      </main>
-    </div>
+      </article>
+    </main>
   );
 }
