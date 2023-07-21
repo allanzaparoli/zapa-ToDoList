@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 0 0;
+  width: 100%;
+}
+
+.form input {
+  flex: 1 0 0;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 0.25rem;
+  background: var(--gray-500);
+  margin-top: -4rem;
+  color: var(--white);
+}
+
+.footer {
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: var(--blue-Dark);
+  margin-top: -4rem;
+}
+
+.footer button {
+  color: var(--gray-100);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 120%;
+  background: var(--blue-Dark);
+  border: 0;
+}
+
+.footer img {
+  width: 0.8rem;
+  margin: auto 0.3rem;
+}

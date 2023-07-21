@@ -1,7 +1,24 @@
+import styles from './form.module.css';
+import plusButton from '../assets/plusButton.svg';
+
 export function Form() {
   return (
-    <div>
-      <h1>Form</h1>
-    </div>
+    <article>
+      <form className={styles.form}>
+        <input
+          type="text"
+          name="lista de tarefas"
+          placeholder="Adicionar uma nova tarefa"
+          required
+        />
+        <footer className={styles.footer}>
+          <button type="submit">
+            Criar
+            {' '}
+            <img src={plusButton} alt="imagem" />
+          </button>
+        </footer>
+      </form>
+    </article>
   );
 }
