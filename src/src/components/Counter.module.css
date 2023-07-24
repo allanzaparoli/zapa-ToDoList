@@ -3,16 +3,18 @@
   justify-content:space-between;
   align-items: flex-end;
   align-self: stretch;
-  padding: 6rem 0;
+  padding: 6rem 0 2rem 0;
   color: var(--white);
 }
 
 .tarefaCriada {
-  margin-right: 1rem;
   color: var(--blue-Dark);
 }
 
 .tarefaConcluida {
-  margin-right: 1rem;
   color: var(--purple);
+}
+
+.CommentsCounter span {
+  margin-left: 1rem;
 }
