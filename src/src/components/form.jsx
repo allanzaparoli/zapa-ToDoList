@@ -1,5 +1,6 @@
 import styles from './form.module.css';
 import plusButton from '../assets/plusButton.svg';
+import { Counter } from './Counter';
 
 export function Form() {
   return (
@@ -19,6 +20,9 @@ export function Form() {
           </button>
         </footer>
       </form>
+      <div>
+        <Counter />
+      </div>
     </article>
   );
 }
