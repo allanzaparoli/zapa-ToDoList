@@ -1,0 +1,28 @@
+.CommentsText {
+  display: flex;
+  align-items:flex-start;
+  padding: 1rem;
+  justify-content: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.checkText {
+  display: flex;
+  flex: 1 0 0;
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+.checkText img {
+  margin-right: 1rem;
+}
+
+.trash img {
+  width: 30px;
+  height: 30px;
+}
