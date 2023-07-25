@@ -29,6 +29,15 @@ export function Form() {
     event.target.setCustomValidity('Digite um texto válido');
   }
 
+  const deleteComment = (commentToDelete) => {
+    try {
+      const commentWithoutDeleted = comments.filter((comment) => comment.id !== commentToDelete);
+      setComments(commentWithoutDeleted);
+    } catch (error) {
+      alert('Erro ao deletar nota');
+    }
+  };
+
   const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
@@ -62,6 +71,7 @@ export function Form() {
                 index={index}
                 content={comment.content}
                 isChecked={comment.isChecked}
+                deleteComment={deleteComment}
               />
             ))
             : <NotCommentsText />

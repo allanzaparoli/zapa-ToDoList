@@ -1,5 +1,4 @@
 import trash from '../assets/trash.svg';
-import check from '../assets/check.svg';
 import styles from './CommentsText.module.css';
 
 export function CommentsText({
@@ -8,12 +7,14 @@ export function CommentsText({
   return (
     <section className={styles.CommentsText}>
       <div className={styles.checkText}>
-        <img src={check} alt="check" />
+        <input
+          type="checkbox"
+        />
         <p>{content}</p>
       </div>
-      <div className={styles.trash}>
+      <button type="button" className={styles.trash}>
         <img src={trash} alt="lixo" />
-      </div>
+      </button>
     </section>
   );
 }

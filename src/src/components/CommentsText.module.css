@@ -18,11 +18,18 @@
   color: var(--gray-100);
 }
 
-.checkText img {
+.checkText input {
   margin-right: 1rem;
+
+}
+
+.trash {
+  background: var(--gray-600);
+  border: 0;
 }
 
 .trash img {
   width: 30px;
   height: 30px;
+  background: var(--gray-600);
 }
