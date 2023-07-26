@@ -18,7 +18,12 @@ export function CommentsText({
           name="selecionar"
           checked={isChecked}
         />
-        <p>{content}</p>
+        <p className={isChecked
+          ? styles.linethrough : styles.noline}
+        >
+          {content}
+
+        </p>
       </div>
       <button onClick={handleDeleteComment} title="Deletar comentário" type="button" className={styles.trash}>
         <img src={trash} alt="lixo" />

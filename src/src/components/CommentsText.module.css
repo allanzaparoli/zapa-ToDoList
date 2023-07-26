@@ -33,3 +33,8 @@
   height: 30px;
   background: var(--gray-600);
 }
+
+.linethrough {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
