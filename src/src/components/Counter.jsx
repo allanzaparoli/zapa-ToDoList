@@ -1,17 +1,19 @@
 import styles from './Counter.module.css';
 
-export function Counter() {
+export function Counter({ comments }) {
+  const checkedComments = comments.filter((comment) => comment.isChecked);
+
   return (
     <header className={styles.CommentsCounter}>
       <div>
         <em className={styles.tarefaCriada}>Tarefa Criada</em>
         {' '}
-        <span>0</span>
+        <span>{comments.length}</span>
       </div>
       <div>
         <em className={styles.concluidas}>Concluídas</em>
         {' '}
-        <span>0</span>
+        <span>{checkedComments.length}</span>
       </div>
     </header>
   );
