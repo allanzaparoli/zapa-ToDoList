@@ -38,6 +38,15 @@ export function Form() {
     }
   };
 
+  const handleCheckbox = (e, id) => {
+    const isTrue = e.target.checked;
+    const findComment = comments.find((comment) => comment.id === id);
+    const index = comments.indexOf(findComment);
+    const newComments = [...comments];
+    newComments[index].isChecked = isTrue;
+    setComments(newComments);
+  };
+
   const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
@@ -72,6 +81,7 @@ export function Form() {
                 content={comment.content}
                 isChecked={comment.isChecked}
                 deleteComment={deleteComment}
+                handleCheckbox={handleCheckbox}
               />
             ))
             : <NotCommentsText />
